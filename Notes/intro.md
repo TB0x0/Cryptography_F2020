@@ -38,7 +38,7 @@ Cryptographic tools and protocols provide specific types of assurances regarding
 
 ## Symmetric and Asymmetric Algorithms
 
-<ol>
+<ul>
   <li>Symmetric Cryptography Algorithms</li>
     <ul>
       <li>Encryption/Decryption</li>
@@ -52,4 +52,4 @@ Cryptographic tools and protocols provide specific types of assurances regarding
       <li>Digital Signatures</li>
       <li>Key-pair generation</li>
     </ul>
-</ol>
+</ul>
