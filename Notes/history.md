@@ -17,6 +17,17 @@ These ciphers are trivial to break and with a single plaintext-ciphertext pair t
 
 **A cipher satisfies the requirement of perfect secrecy if it can withstand attacks by an attacker with unlimited computational ability.**
 
+# Cardinality (count) of Functions
+
+How many functions of type n map to a function of type m. Each row corresponds to a possible input
+
+<img src="/res/discreteex.png">
+
+## Count of One-to-One Functions
+
+One-to-one functions are permutations. Can be seen as a table with 2^n entries where each row is unique.
+
+
 ## Vernam Cipher (One Time Pad - OTP)
 
 An OTP is perfectly secure as long as the key is never reused.
@@ -35,8 +46,4 @@ Thus, in practice cryptographic functions settle for semantic security.
 
 **A cipher is semantically secure if there is no algorithm that has lower complexity than brute forcing the key.**
 
-## Discrete functions
-
-Any function that maps a bit-string of length m to a bit string of length n can be represented with one row corresponding to each possible input.
-
-<img src="/res/discreteex.png">
+#
