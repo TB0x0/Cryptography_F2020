@@ -17,6 +17,24 @@ These ciphers are trivial to break and with a single plaintext-ciphertext pair t
 
 **A cipher satisfies the requirement of perfect secrecy if it can withstand attacks by an attacker with unlimited computational ability.**
 
+## Vernam Cipher (One Time Pad - OTP)
+
+An OTP is perfectly secure as long as the key is never reused.
+
+*Disadvantages:*
+
+- Setting up a shared key is the most difficult part of secret communication. Ideally it can be reused once set.
+
+- OTP does not guarantee the integrity of received data. Bits can be flipped.
+
+## Semantic Security
+
+Perfect secrecy is overkill. As long as the key size is large enough it is computationally infeasible to try to brute force it.
+
+Thus, in practice cryptographic functions settle for semantic security.
+
+**A cipher is semantically secure if there is no algorithm that has lower complexity than brute forcing the key.**
+
 ## Cardinality (count) of Functions
 
 How many functions of type n map to a function of type m. Each row corresponds to a possible input
@@ -41,29 +59,16 @@ These functions are enormous so we need a key that conveys the chosen function.
 
 Keyed functions used in cryptography are pseudo-random functions, pseudo-random permutations, and pseudo-random generators.
 
-- PRF: bits are mapped from m-bit input to n-bit output. Mapping is determined by the i-bit key. PRFs with n < m are used as compression functions.
+- PRF: *F:{0,1}^l✕{0,1}^m →{0,1}^n* Bits are mapped from m-bit input to n-bit output. Mapping is determined by the i-bit key. PRFs with n < m are used as compression functions.
 
-- PRP:
+- PRP: *E:{0,1}l✕{0,1}n →{0,1}n* A specific permutation of the 2^n possible n-bit values. PRPs are used as block ciphers
 
-- PRG:
+- PRG: A PRF can be used to construct a PRG. If F(k,x)  is a secure PRF, then  G(k)=F(k,0)||F(k,1)||F(k,2)... is a secure PRG.
 
+## Symmetric vs Asymmetric Cryptography
 
-## Vernam Cipher (One Time Pad - OTP)
+### Symmetric
 
-An OTP is perfectly secure as long as the key is never reused.
-
-*Disadvantages:*
-
-- Setting up a shared key is the most difficult part of secret communication. Ideally it can be reused once set.
-
-- OTP does not guarantee the integrity of received data. Bits can be flipped.
-
-## Semantic Security
-
-Perfect secrecy is overkill. As long as the key size is large enough it is computationally infeasible to try to brute force it.
-
-Thus, in practice cryptographic functions settle for semantic security.
-
-**A cipher is semantically secure if there is no algorithm that has lower complexity than brute forcing the key.**
-
-#
+- PRGs are used for realizing stream ciphers
+- PRPs are used for realizing block ciphers
+- PRFs are used for realizing hash functions
