@@ -17,15 +17,35 @@ These ciphers are trivial to break and with a single plaintext-ciphertext pair t
 
 **A cipher satisfies the requirement of perfect secrecy if it can withstand attacks by an attacker with unlimited computational ability.**
 
-# Cardinality (count) of Functions
+## Cardinality (count) of Functions
 
 How many functions of type n map to a function of type m. Each row corresponds to a possible input
 
 <img src="/res/discreteex.png">
 
-## Count of One-to-One Functions
+## One-to-One Functions
 
 One-to-one functions are permutations. Can be seen as a table with 2^n entries where each row is unique.
+
+## Pseudo Random Functions
+
+Cryptographic functions usually have hundreds or thousands of bits.
+
+- SHA-2 maps 512bit strings to 256bit strings.
+
+- AES is a one-to-one function that maps 128bit strings to 128bit strings.
+
+These functions are enormous so we need a key that conveys the chosen function.
+
+## PRFs, PRPs, PRGs
+
+Keyed functions used in cryptography are pseudo-random functions, pseudo-random permutations, and pseudo-random generators.
+
+- PRF: bits are mapped from m-bit input to n-bit output. Mapping is determined by the i-bit key. PRFs with n < m are used as compression functions.
+
+- PRP:
+
+- PRG:
 
 
 ## Vernam Cipher (One Time Pad - OTP)
