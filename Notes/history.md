@@ -39,4 +39,4 @@ Thus, in practice cryptographic functions settle for semantic security.
 
 Any function that maps a bit-string of length m to a bit string of length n can be represented with one row corresponding to each possible input.
 
-<img src="res/discreteex.png">
+<img src="/res/discreteex.png">
