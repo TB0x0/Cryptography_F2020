@@ -72,3 +72,7 @@ Keyed functions used in cryptography are pseudo-random functions, pseudo-random 
 - PRGs are used for realizing stream ciphers
 - PRPs are used for realizing block ciphers
 - PRFs are used for realizing hash functions
+
+### Asymmetric
+
+In asymmetric cryptography it is easier to think of functions as operations performed in a finite group.
