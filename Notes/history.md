@@ -76,3 +76,10 @@ Keyed functions used in cryptography are pseudo-random functions, pseudo-random 
 ### Asymmetric
 
 In asymmetric cryptography it is easier to think of functions as operations performed in a finite group.
+
+- It is asymmetric because of the use of key-pairs instead of a shared key
+- A key-pair includes a private secret key and a public key
+
+## Finite Groups in Asymmetric Cryptography
+
+*A finite group is a set with a group operation that maps two elements to a third element of the same set*
