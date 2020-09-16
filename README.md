@@ -5,3 +5,4 @@ Crowdsourced notes for my Cryptography class Fall semester 2020
 
 - [Introduction](/Notes/intro.md)
 - [History and Foundations](/Notes/history.md)
+- [Finite Groups and Elementary Number Theory](/Notes/numbertheory.md)
